@@ -1,0 +1,119 @@
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: flex-start;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 9999;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease, box-shadow 0.4s ease;
+    box-shadow: darkblue;
+  }
+  
+  /* Logo */
+  .logo-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+    border-radius: 100%;
+    margin-left: 40px;
+  }
+  
+  .company-name {
+    font-size: 18px;
+    font-weight: bold;
+    color: rgb(201, 0, 84);
+  }
+  
+  /* Navbar Transparent */
+  .navbar.transparent {
+    background: linear-gradient(to bottom, rgba(250, 250, 250, 0.26), rgba(207, 207, 207, 0)); 
+    box-shadow: none;
+  }
+  
+  .navbar.solid {
+    background: rgba(255, 255, 255, 0.9); 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  } 
+  
+  /* Navbar Menu */
+  
+  .navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding: 0;
+    margin-left: auto; 
+    margin-right: 120px; 
+  }
+  .navbar ul li {
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    transition: color 0.3s ease;
+    position: relative;
+  }
+  
+  /* Active state for tabs */
+  .navbar ul li.active {
+    color: #8700bd;
+    text-decoration: underline;
+  }
+  
+  .navbar ul li a {
+    text-decoration: none; 
+    color: inherit; 
+  }
+  
+  .navbar ul li:hover {
+    color: #ce007f;
+  }
+  
+  /* Dropdown Menu */
+  .dropdown {
+    position: relative;
+  }
+  
+  .dropdown .dropdown-toggle {
+    cursor: pointer;
+  }
+  
+  .dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: white;
+    list-style: none;
+    padding: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    z-index: 1000;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    opacity: 0;
+    width: 98px;
+  }
+  
+  .dropdown:hover .dropdown-menu {
+    display: block;
+    opacity: 1;
+  }
+  
+  .dropdown-menu li {
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .dropdown-menu li:hover {
+    background-color: #f0f0f0;
+  } 
+
+  

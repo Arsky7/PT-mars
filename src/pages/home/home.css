@@ -1,0 +1,147 @@
+.home-container {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  width: 100%;
+  box-sizing: border-box;
+}
+.home-text{
+  text-align: center; /* Pusatkan teks */
+  padding: 10px; /* Tambahkan jarak dalam */
+  max-width: 700px; /* Batasi lebar maksimal */
+  margin: 0 auto; /* Pusatkan secara horizontal*/
+}    
+.home-text p {
+  text-align: center;
+}
+
+.home-text h2 {
+  text-align: center;
+}
+
+/* Grid untuk Konten */
+.content-grid {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.content-row {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+.content-box {
+  width: 220px;
+  height: 260px;
+  background-color: #007bff;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.content-box h3 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: left;
+}
+
+.content-box.right h3{
+  text-align: left;
+}
+
+.content-box p {
+  margin: 5px 0 0;
+  text-align: left;
+}
+
+/* Zigzag: Alternating direction */
+.content-row.left {
+  flex-direction: row;
+}
+
+.content-row.right {
+  flex-direction: row-reverse;
+}
+
+.accordion {
+  background-color: #f8f9fa;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  width: 600px;
+  height: auto;
+  padding: 10px;
+  margin-top: 25px;
+}
+
+.accordion-body {
+  padding: 10px 15px;
+  background-color: #fff;
+  color: #000;
+  line-height: 1.6;
+  font-size: 14px;
+  overflow: visible;
+}
+
+/* Accordion Header */
+.accordion-header {
+  padding: 10px 15px;
+  background-color: #e9ecef;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.accordion-header:hover {
+  background-color: #f1f1f1;
+}
+
+/* Styling Tombol di dalam Accordion */
+.accordion-button-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.accordion-button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.accordion-button:hover {
+  background-color: #0056b3;
+}
+
+/* Responsif untuk perangkat kecil */
+@media (max-width: 768px) {
+  .content-grid {
+    flex-direction: column;
+  }
+
+  .content-row {
+    flex-direction: column;
+    align-items: center;
+  }
+}

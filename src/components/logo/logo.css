@@ -1,0 +1,46 @@
+.trusted-companies {
+    margin-top: 40px;
+    padding: 20px 50px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    text-align: center;
+    overflow: hidden; /* Menyembunyikan logo yang melampaui kontainer */
+  }
+  
+  .logos {
+    display: flex;
+    justify-content: center; /* Menjaga logo rata tengah */
+    align-items: center;
+    gap: 20px; /* Menjaga jarak antar logo */
+    margin-top: 20px;
+    animation: scrollLogos 10s linear infinite; /* Durasi animasi */
+  }
+  
+  .logos img {
+    width: 120px; /* Ukuran lebar logo */
+    height: 120px; /* Ukuran tinggi logo */
+    object-fit: contain; /* Menjaga logo tidak terdistorsi */
+    object-position: center; /* Memastikan logo berada di tengah */
+  }
+  
+  /* Animasi scrolling dengan loop */
+  @keyframes scrollLogos {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%); /* Geser separuh untuk memastikan looping */
+    }
+  }
+  
+  /* Responsif untuk layar kecil */
+  @media (max-width: 768px) {
+    .logos {
+      gap: 10px;
+    }
+    .logos img {
+      width: 100px; /* Ukuran lebih kecil di layar kecil */
+      height: 100px;
+    }
+  }
+  

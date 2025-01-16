@@ -1,0 +1,70 @@
+/* Styling untuk bagian Company Profile */
+.company-profile {
+    margin-top: 40px;
+    padding: 40px 50px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .company-profile h2 {
+    font-size: 32px;
+    font-weight: bold;
+    color: #007bff;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+  
+  .company-profile .intro-text {
+    font-size: 18px;
+    line-height: 1.8;
+    color: #555;
+    margin-bottom: 30px;
+    padding: 0 40px;
+  }
+  
+  .company-profile .history-section {
+    background-color: #f1f1f1;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .company-profile .history-section h3 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #28a745;
+    margin-bottom: 15px;
+  }
+  
+  .company-profile .history-section p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #555;
+  }
+  
+  /* Responsif untuk layar kecil */
+  @media (max-width: 768px) {
+    .company-profile {
+      padding: 30px 20px;
+    }
+  
+    .company-profile h2 {
+      font-size: 26px;
+    }
+  
+    .company-profile .intro-text {
+      font-size: 16px;
+    }
+  
+    .company-profile .history-section h3 {
+      font-size: 20px;
+    }
+  
+    .company-profile .history-section p {
+      font-size: 14px;
+    }
+  }
+  
