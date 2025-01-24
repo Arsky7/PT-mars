@@ -1,0 +1,85 @@
+/* Footer Styling */
+.footer {
+  background-color: #d40628;
+  color: white;
+  padding: 40px 20px;
+  font-size: 14px;
+  text-align: center;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: start; /* Atur elemen ke arah kiri */
+  align-items: flex-start; /* Pastikan elemen sejajar di atas */
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 10px; /* Kurangi jarak antar elemen untuk lebih dekat */
+}
+
+.footer-info {
+  width: 50%; /* Perbesar lebar agar terlihat lebih proporsional */
+  text-align: left;
+}
+
+.footer-info h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.footer-info p {
+  margin: 5px 0;
+}
+
+.footer-links {
+  width: 45%; /* Sesuaikan lebar agar lebih dekat ke footer info */
+}
+
+.footer-links h4 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.footer-links ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0; /* Hilangkan margin default */
+}
+
+.footer-links ul li {
+  margin: 3px 0; /* Perkecil jarak antar item */
+}
+
+.footer-links ul li a {
+  text-decoration: none;
+  color: white;
+  transition: color 0.3s;
+}
+
+.footer-links ul li a:hover {
+  color: #b13f3f;
+}
+
+/* Styling Footer Bottom */
+.footer-bottom {
+  margin-top: 20px; /* Kurangi jarak atas untuk mendekatkan */
+  font-size: 12px;
+  background-color: #b40027;
+  padding: 10px 0;
+}
+
+.footer-bottom p {
+  margin: 0;
+}
+
+/* Responsif untuk perangkat kecil */
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    text-align: center;
+    gap: 10px; /* Kurangi jarak antar elemen pada perangkat kecil */
+  }
+
+  .footer-info {
+    text-align: left; /* Menjaga teks tetap kiri di layar kecil */
+  }
+}

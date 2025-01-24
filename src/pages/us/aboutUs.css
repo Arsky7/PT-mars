@@ -1,0 +1,38 @@
+.about-us {
+  position: relative;
+  top: 80px; /* Sesuaikan dengan tinggi navbar */
+  text-align: center;
+}
+
+.aboutUs-container {
+  background-color: #007bff;
+  color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.image-text-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 1;
+}
+
+.team-image {
+  width: 300px; /* Sesuaikan ukuran gambar */
+  height: 200px;
+  object-fit: cover;
+  margin-right: 20px;
+}
+
+.text-container {
+  text-align: left;
+  flex: 1; /* Membuat teks mengisi sisa ruang */
+}
+
+/* Penyesuaian tambahan */
+.about-us-wrapper {
+  max-width: 1200px; /* Batasi lebar maksimum konten */
+  margin: 0 auto; /* Pusatkan konten */
+}

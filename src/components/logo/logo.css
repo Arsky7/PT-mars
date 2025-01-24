@@ -1,46 +1,43 @@
 .trusted-companies {
-    margin-top: 40px;
-    padding: 20px 50px;
-    background-color: #ffffff;
-    border-radius: 10px;
-    text-align: center;
-    overflow: hidden; /* Menyembunyikan logo yang melampaui kontainer */
+  margin-top: 40px;
+  padding: 20px 50px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  text-align: center;
+  overflow: hidden; /* Menyembunyikan gambar yang keluar dari area container */
+}
+
+.logos {
+  display: flex;
+  width: max-content;  /* Pastikan kontainer cukup lebar */
+  animation: scrollLeft 30s linear infinite; /* Menambahkan animasi yang lebih halus */
+}
+
+.logo-wrapper {
+  display: flex;
+  gap: 20px;
+}
+
+.logos img {
+  width: 120px;
+  height: 120px;
+  object-fit: contain;
+  object-position: center;
+}
+
+/* Keyframe untuk animasi scroll */
+@keyframes scrollLeft {
+  0% {
+    transform: translateX(0); /* Mulai dari posisi awal */
   }
-  
-  .logos {
-    display: flex;
-    justify-content: center; /* Menjaga logo rata tengah */
-    align-items: center;
-    gap: 20px; /* Menjaga jarak antar logo */
-    margin-top: 20px;
-    animation: scrollLogos 10s linear infinite; /* Durasi animasi */
+  100% {
+    transform: translateX(-100%); /* Geser seluruh gambar */
   }
-  
+}
+
+@media (max-width: 768px) {
   .logos img {
-    width: 120px; /* Ukuran lebar logo */
-    height: 120px; /* Ukuran tinggi logo */
-    object-fit: contain; /* Menjaga logo tidak terdistorsi */
-    object-position: center; /* Memastikan logo berada di tengah */
+    width: 100px;
+    height: 100px;
   }
-  
-  /* Animasi scrolling dengan loop */
-  @keyframes scrollLogos {
-    0% {
-      transform: translateX(0);
-    }
-    100% {
-      transform: translateX(-50%); /* Geser separuh untuk memastikan looping */
-    }
-  }
-  
-  /* Responsif untuk layar kecil */
-  @media (max-width: 768px) {
-    .logos {
-      gap: 10px;
-    }
-    .logos img {
-      width: 100px; /* Ukuran lebih kecil di layar kecil */
-      height: 100px;
-    }
-  }
-  
+}

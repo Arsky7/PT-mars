@@ -18,7 +18,7 @@ const ContactUs = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log('Form submitted', formData);
-    // Implementasikan logika pengiriman form, seperti mengirim data ke API
+    
   };
 
   return (
