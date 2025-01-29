@@ -7,7 +7,7 @@ const Footer = () => {
     <div className="footer">
       <div className="footer-container">
         <div className="footer-info">
-          <h3>PT. Mars Acme</h3>
+          <h3>PT. Mars Acme Perkasa</h3>
           <p>Alamat: Jl. Kebon jeruk No. 123, Jakarta, Indonesia</p>
           <p>Email: contact@marsacme.com</p>
           <p> Telepon: +62 959 9406 2048</p>
@@ -26,7 +26,7 @@ const Footer = () => {
       </div>
 
       <div className="footer-bottom">
-        <p>&copy; 2025 PT. Mars Acme. All Rights Reserved.</p>
+        <p>&copy; 2025 PT. Mars Acme Perkasa. All Rights Reserved.</p>
       </div>
     </div>
   );

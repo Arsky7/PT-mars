@@ -5,19 +5,20 @@
   padding: 40px 20px;
   font-size: 14px;
   text-align: center;
+  margin-right: 25px;
 }
 
 .footer-container {
   display: flex;
-  justify-content: start; /* Atur elemen ke arah kiri */
-  align-items: flex-start; /* Pastikan elemen sejajar di atas */
+  justify-content: start; 
+  align-items: flex-start;
   max-width: 1200px;
   margin: 0 auto;
-  gap: 10px; /* Kurangi jarak antar elemen untuk lebih dekat */
+  gap: 10px; 
 }
 
 .footer-info {
-  width: 50%; /* Perbesar lebar agar terlihat lebih proporsional */
+  width: 50%; 
   text-align: left;
 }
 
@@ -31,7 +32,7 @@
 }
 
 .footer-links {
-  width: 45%; /* Sesuaikan lebar agar lebih dekat ke footer info */
+  width: 45%; 
 }
 
 .footer-links h4 {
@@ -42,11 +43,11 @@
 .footer-links ul {
   list-style-type: none;
   padding: 0;
-  margin: 0; /* Hilangkan margin default */
+  margin: 0; 
 }
 
 .footer-links ul li {
-  margin: 3px 0; /* Perkecil jarak antar item */
+  margin: 3px 0; 
 }
 
 .footer-links ul li a {
@@ -59,9 +60,9 @@
   color: #b13f3f;
 }
 
-/* Styling Footer Bottom */
+
 .footer-bottom {
-  margin-top: 20px; /* Kurangi jarak atas untuk mendekatkan */
+  margin-top: 20px; 
   font-size: 12px;
   background-color: #b40027;
   padding: 10px 0;
@@ -71,15 +72,15 @@
   margin: 0;
 }
 
-/* Responsif untuk perangkat kecil */
+
 @media (max-width: 768px) {
   .footer-container {
     flex-direction: column;
     text-align: center;
-    gap: 10px; /* Kurangi jarak antar elemen pada perangkat kecil */
+    gap: 10px;
   }
 
   .footer-info {
-    text-align: left; /* Menjaga teks tetap kiri di layar kecil */
+    text-align: left;
   }
 }
